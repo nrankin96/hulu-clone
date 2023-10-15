@@ -12,7 +12,7 @@ const Navbar = () => {
     (buttonClick) ? setbuttonClick(false) : setbuttonClick(true);
   }
   return (
-    <div className="flex  justify-between items-center  top-0 left-0 w-full z-50  px-20 ">
+    <div className="flex  justify-between items-center  top-0 left-0 w-full z-50 px-6 md:px-20 ">
       <div className="flex">
         <Image src={"/logo.png"} width={80} height={20} />
       </div>

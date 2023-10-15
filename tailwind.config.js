@@ -11,7 +11,8 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
       },
       backgroundImage: {
-        'hero': "url(/hero.jpeg)"
+        'hero': "url(/hero.jpeg)",
+        'family-guy': "url(/family-guy.png)",
       }
     },
   },
