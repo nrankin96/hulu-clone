@@ -6,6 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
     const [buttonClick, setbuttonClick] = useState(false);
+// TODO: Fix Button Click Animation
 
   const handleClick = () => {
     (buttonClick) ? setbuttonClick(false) : setbuttonClick(true);
@@ -16,16 +17,16 @@ const Navbar = () => {
         <Image src={"/logo.png"} width={80} height={20} />
       </div>
       <div>
-        <button className="text-white" onClick={handleClick}>
+        <button className="text-white flex flex-col pt-4 items-end" onClick={handleClick}>
           <div className="flex justify-center w-[45px] h-[35px] bg-[#3B3B3B] rounded-md md:hidden">
             <RxHamburgerMenu className="h-4 w-4 my-auto cursor-pointer md:hidden" />
           </div>
           <div className="mt-[15px]">
             {buttonClick? (<button className="text-white" onClick={handleClick}>
              <div className="flex flex-col justify-around items-center w-[205px] h-[90px] border rounded-md font-inter uppercase ">
-              <div >
+              <div className="">
               <p>
-              Log In
+                Log
               </p>
               
               </div>
